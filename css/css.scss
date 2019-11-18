@@ -1,0 +1,176 @@
+/* Global */
+
+$main-color: #4169E1;
+$back-color: #F5F5F5;
+* {
+
+    font-family: 'Bitter', serif;
+}
+
+.head {
+        font-size: 4vw;
+        text-transform: capitalize;
+        color: $main-color;
+        margin-bottom: 10%;
+}
+
+/* header */
+
+.header {
+    background-image: url(../pics/back.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    .info {
+        position: relative;
+        color:white;
+        margin: auto;
+        text-align: center;
+        z-index: 2;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        img {width: 10%;height: 10%;;}
+        h1 , h2 {
+            padding: 5px;
+            font-size: 4vw;
+            display: inline-block;
+        }
+    }
+}
+
+.header::before {
+    content:"";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(black,0.5);
+    z-index: 1;
+}
+
+/* about */ 
+
+.about {
+    padding: 3%;
+    background-color:  $back-color + gray	;
+    .text {
+        ul {list-style: none;padding: 0;margin: 0}
+        h3 {color: $main-color;margin-bottom: 7%;}
+        li {color: $main-color;display: inline-block;margin-right: 3%}
+        i {width: 50px;height: 50px;}
+        .fa-facebook {
+            color: #3b5998;
+        }
+        .fa-whatsapp {
+            color: #25d366;
+        }
+        .fa-envelope {
+            color: #ea4335;
+        }
+    }
+    p {
+        color: gray;
+        margin-bottom: 10%;
+    }
+    a {
+        text-decoration: none;
+    }
+    .img img {
+        width: 300px;
+    }
+}
+
+/* why choose me */
+
+.whyme {
+    padding: 3%;
+    text-align: center;
+    background-color:  $back-color;
+    .prop {
+        color: gray;
+        i {font-size: 5vw;color: $main-color;margin-bottom: 3%;}
+        h3 {margin: 1%;font-size: 2vw;margin-bottom: 5%;}
+        p {font-size: 1vw}
+        
+    }
+    
+}
+
+/* skills */
+
+.skills {
+    padding: 3%;
+    text-align: center;
+    background-color:  $back-color +gray;
+    h2 {margin-bottom: 5%;}
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li {
+            margin: 5%;
+            display: inline-block;
+            font-size: 7vw;
+            .fa-html5 {
+                color: #e34f26;
+            }
+            .fa-css3-alt {
+                color: #254bdd;
+            }
+            .fa-js {
+                color: #f7df1e;
+            }
+            .fa-bootstrap {
+                color: #8e40d1;
+            }
+            .fa-sass{
+                color: #c76494;
+            }
+        }
+    }
+}
+
+
+/* footer */ 
+
+footer {
+    padding: 1%;
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    background-color: #03304a ;
+}
+
+/* media */
+
+@media (max-width:560px) {
+    .whyme .prop i {font-size: 5vw}
+    .whyme .prop h2 {font-size: 10vw}
+    .whyme .prop p {font-size: 2vw}
+}
+
+@media (max-width:767px) {
+    .header .info h1,
+    .header .info h2 { 
+        border-top: 3px white solid;
+        border-bottom: 3px white solid;}
+    .about .img , .about .text{
+        width: 80%;
+        margin: 1% auto;
+        text-align: center;
+        font-size: 2vw;
+        i {width: 30px;height: 30px;}
+    }
+    .about .img img {width: 80%;}
+    
+}
+
+@media (min-width:768px) {
+    .header .info h1,
+    .header .info h2 { 
+        border-top: 5px white solid;
+        border-bottom: 5px white solid;}
+}

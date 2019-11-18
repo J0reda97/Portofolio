@@ -1,0 +1,162 @@
+/* Global */
+* {
+  font-family: 'Bitter', serif; }
+
+.head {
+  font-size: 4vw;
+  text-transform: capitalize;
+  color: #4169E1;
+  margin-bottom: 10%; }
+
+/* header */
+.header {
+  background-image: url(../pics/back.jpg);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center; }
+  .header .info {
+    position: relative;
+    color: white;
+    margin: auto;
+    text-align: center;
+    z-index: 2;
+    text-transform: capitalize;
+    margin-bottom: 20px; }
+    .header .info img {
+      width: 10%;
+      height: 10%; }
+    .header .info h1, .header .info h2 {
+      padding: 5px;
+      font-size: 4vw;
+      display: inline-block; }
+
+.header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1; }
+
+/* about */
+.about {
+  padding: 3%;
+  background-color: white; }
+  .about .text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .about .text h3 {
+    color: #4169E1;
+    margin-bottom: 7%; }
+  .about .text li {
+    color: #4169E1;
+    display: inline-block;
+    margin-right: 3%; }
+  .about .text i {
+    width: 50px;
+    height: 50px; }
+  .about .text .fa-facebook {
+    color: #3b5998; }
+  .about .text .fa-whatsapp {
+    color: #25d366; }
+  .about .text .fa-envelope {
+    color: #ea4335; }
+  .about p {
+    color: gray;
+    margin-bottom: 10%; }
+  .about a {
+    text-decoration: none; }
+  .about .img img {
+    width: 300px; }
+
+/* why choose me */
+.whyme {
+  padding: 3%;
+  text-align: center;
+  background-color: #F5F5F5; }
+  .whyme .prop {
+    color: gray; }
+    .whyme .prop i {
+      font-size: 5vw;
+      color: #4169E1;
+      margin-bottom: 3%; }
+    .whyme .prop h3 {
+      margin: 1%;
+      font-size: 2vw;
+      margin-bottom: 5%; }
+    .whyme .prop p {
+      font-size: 1vw; }
+
+/* skills */
+.skills {
+  padding: 3%;
+  text-align: center;
+  background-color: white; }
+  .skills h2 {
+    margin-bottom: 5%; }
+  .skills ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    .skills ul li {
+      margin: 5%;
+      display: inline-block;
+      font-size: 7vw; }
+      .skills ul li .fa-html5 {
+        color: #e34f26; }
+      .skills ul li .fa-css3-alt {
+        color: #254bdd; }
+      .skills ul li .fa-js {
+        color: #f7df1e; }
+      .skills ul li .fa-bootstrap {
+        color: #8e40d1; }
+      .skills ul li .fa-sass {
+        color: #c76494; }
+
+/* footer */
+footer {
+  padding: 1%;
+  color: white;
+  font-size: 2vw;
+  text-align: center;
+  background-color: #03304a; }
+
+/* media */
+@media (max-width: 560px) {
+  .whyme .prop i {
+    font-size: 5vw; }
+
+  .whyme .prop h2 {
+    font-size: 10vw; }
+
+  .whyme .prop p {
+    font-size: 2vw; } }
+@media (max-width: 767px) {
+  .header .info h1,
+  .header .info h2 {
+    border-top: 3px white solid;
+    border-bottom: 3px white solid; }
+
+  .about .img, .about .text {
+    width: 80%;
+    margin: 1% auto;
+    text-align: center;
+    font-size: 2vw; }
+    .about .img i, .about .text i {
+      width: 30px;
+      height: 30px; }
+
+  .about .img img {
+    width: 80%; } }
+@media (min-width: 768px) {
+  .header .info h1,
+  .header .info h2 {
+    border-top: 5px white solid;
+    border-bottom: 5px white solid; } }
+
+/*# sourceMappingURL=css.css.map */
